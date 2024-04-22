@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"election-year.css"}
+{"version":3,"sourceRoot":"","sources":["scss/election-year.scss"],"names":[],"mappings":"AACI;EAMI;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI","file":"election-year.css"}

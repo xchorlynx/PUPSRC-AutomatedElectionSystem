@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="vendor/plugin/scripts/air-datepicker/dist/css/datepicker.min.css">
+<link rel="stylesheet" href="vendor/plugin/air-datepicker/dist/css/datepicker.min.css">
+<link rel="stylesheet" href="src/styles/election-year.css">
 
 <main class="main">
     <div class="container">
@@ -19,10 +20,20 @@
                         ?>
                     </div>
 
-                    <div class="card-box">
-                        <input type="text" id="year-picker">
+                    <section class="card-box">
+                        <div class="card-header">
+                            <h3 class="text-capitalize">Select new election year</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form">
+                                <input type="text" class="col-10 col-md-4" id="year-picker" readonly>
+                                <button type="button" class="btn btn-success btn-lg mx-auto">Save Changes</button>
+                            </div>
 
-                    </div>
+                        </div>
+
+
+                    </section>
 
 
                 </div>
@@ -34,7 +45,7 @@
 <?php
 global $page_scripts;
 $page_scripts = '
-<script src="vendor/plugin/scripts/air-datepicker/dist/js/datepicker.min.js"></script>
-<script src="vendor/plugin/scripts/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+<script src="vendor/plugin/air-datepicker/dist/js/datepicker.min.js"></script>
+<script src="vendor/plugin/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
 <script src="src/scripts/election-year.js"></script>
     ';

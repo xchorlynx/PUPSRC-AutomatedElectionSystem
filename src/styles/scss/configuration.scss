@@ -38,4 +38,30 @@ main.main {
             // max-width: 90dvw;
         }
     }
+
+    .card-box {
+
+        .card-header {
+            display: grid;
+            place-items: center;
+            background-color: rgba(217, 217, 217, 1);
+            padding: calc(0.5rem) calc(2rem);
+
+            h3 {
+                margin: 1rem;
+            }
+        }
+
+        .card-body {
+            padding: 2rem;
+
+            @media only screen and (max-width: 600px) {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+div.datepickers-container div.datepicker {
+    font-size: calc(0.75rem + 0.45vw)
 }

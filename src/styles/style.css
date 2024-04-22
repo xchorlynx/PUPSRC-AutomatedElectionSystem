@@ -193,6 +193,10 @@ main.main .btn.btn-secondary:not(:disabled) {
   background-color: var(--secondary-color);
   border: calc(0.25rem + 0.2vw) solid var(--secondary-color);
 }
+main.main .btn.btn-sucess:not(:disabled) {
+  background-color: rgb(7, 136, 95);
+  border: calc(0.25rem + 0.2vw) solid rgb(7, 136, 95);
+}
 .sidebar.close {
   opacity: 0;
   transform: translateX(-260px);

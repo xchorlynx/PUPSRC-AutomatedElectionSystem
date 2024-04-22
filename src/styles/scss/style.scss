@@ -240,6 +240,17 @@ main.main {
 
 			&:focus {}
 		}
+
+		&.btn-sucess:not(:disabled) {
+			background-color: rgba(7, 136, 95, 1);
+			border: calc(0.25rem + 0.2vw) solid rgba(7, 136, 95, 1);
+
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+		}
 	}
 }
 
