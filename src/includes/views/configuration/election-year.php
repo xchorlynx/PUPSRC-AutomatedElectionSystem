@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="vendor/plugin/scripts/air-datepicker/dist/css/datepicker.min.css">
+
 <main class="main">
     <div class="container">
         <div class="row justify-content-center">
@@ -18,7 +20,7 @@
                     </div>
 
                     <div class="card-box">
-
+                        <input type="text" id="year-picker">
 
                     </div>
 
@@ -32,5 +34,7 @@
 <?php
 global $page_scripts;
 $page_scripts = '
-
+<script src="vendor/plugin/scripts/air-datepicker/dist/js/datepicker.min.js"></script>
+<script src="vendor/plugin/scripts/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+<script src="src/scripts/election-year.js"></script>
     ';

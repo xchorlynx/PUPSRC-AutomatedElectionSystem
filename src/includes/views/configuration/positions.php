@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.5.0/css/rowReorder.bootstrap5.css">
-<link rel="stylesheet" href="src/styles/candidate-position.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.0/air-datepicker.min.css">
 
 <main class="main">
     <div class="container">
@@ -74,10 +73,5 @@
 <?php
 global $page_scripts;
 $page_scripts = '
-        <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
-        <script src="https://cdn.datatables.net/rowreorder/1.5.0/js/dataTables.rowReorder.js"></script>
-        <script src="https://cdn.datatables.net/rowreorder/1.5.0/js/rowReorder.bootstrap5.js"></script>
-        <script type="module" src="src/scripts/candidate-position.js"></script>
+        
     ';
