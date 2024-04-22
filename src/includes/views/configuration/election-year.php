@@ -18,19 +18,10 @@
                     </div>
 
                     <div class="card-box">
-                        <div class="">
-                            <div class="content">
-                                <!-- CONTENT TO BE PUT HERE -->
-                                <p class="head fs-2 fw-bold main-color pt-xl-3">Put Contents Here</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id dictum nulla.
-                                    Fusce facilisis consectetur risus, sit amet aliquet metus mattis et. Aenean et
-                                    pharetra urna. Class aptent taciti sociosqu ad litora torquent per conubia
-                                    nostra, per inceptos himenaeos. Donec nunc dolor, fringilla a lobortis id,
-                                    rutrum tincidunt neque. Mauris tortor ligula, iaculis a tempor vel, ultrices
-                                    quis dui. Aenean aliquet eu mi sit amet volutpat.</p>
-                            </div>
-                        </div>
+
+
                     </div>
+
 
                 </div>
             </div>
