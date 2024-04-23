@@ -29,8 +29,12 @@ let datePickerInst = $(`#year-picker`).datepicker({
         let inputWidth = input.offsetWidth;
         for (let i = 0; i < thisPicker.length; i++) {
             let element = thisPicker[i];
+            if (inputWidth > 250) {
+                element.style.width = inputWidth + 'px';
+            } else {
+                element.style.width = 250 + 'px';
+            }
 
-            element.style.width = inputWidth + 'px';
         }
     },
 });

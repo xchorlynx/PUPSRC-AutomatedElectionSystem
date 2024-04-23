@@ -7,22 +7,28 @@
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
+  h1,
+  .fs-1 {
     font-size: calc(1.45rem + 1.25vw);
   }
-  h2 {
+  h2,
+  .fs-2 {
     font-size: calc(1.18rem + 1.25vw);
   }
-  h3 {
+  h3,
+  .fs-3 {
     font-size: calc(1rem + 1.25vw);
   }
-  h4 {
+  h4,
+  .fs-4 {
     font-size: calc(1rem + 1vw);
   }
-  h5 {
+  h5,
+  .fs-5 {
     font-size: calc(1rem + 0.6575vw);
   }
-  h6 {
+  h6,
+  .fs-6 {
     font-size: calc(0.75rem + 0.6575vw);
   }
   .container-fluid .content-margin {
@@ -63,11 +69,32 @@ h6.page-title {
   background-color: var(--primary-color);
 }
 
+@media only screen and (max-width: 780px) {
+  div.secondary-nav-container {
+    max-width: clamp(300px, 100%, 100%);
+  }
+}
+
 ul.nav {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
   border-bottom: calc(1px + 0.01dvw) solid var(--primary-color);
   margin-bottom: max(2dvw, 0.75rem);
+  overflow-x: auto;
+}
+@media only screen and (min-width: 780px) {
+  ul.nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul.nav li.nav-item {
+    margin-left: 0.75rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  ul.nav li.nav-item {
+    margin-left: 1.5rem;
+  }
 }
 ul li.nav-item a.secondary-nav {
   color: var(--black);
@@ -102,5 +129,5 @@ main.main .card-box .card-body {
 }
 
 div.datepickers-container div.datepicker {
-  font-size: calc(0.75rem + 0.45vw);
+  font-size: clamp(1rem, 0.75rem + 0.45vw, 24px);
 }/*# sourceMappingURL=configuration.css.map */

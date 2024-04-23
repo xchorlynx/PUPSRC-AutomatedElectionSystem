@@ -1,5 +1,4 @@
 main .fa-grip-lines.fas::before, main .fa-grip-lines.fa::before {
-  color: #d9d9d9;
   font-size: max(1vw, 1rem);
 }
 
@@ -38,6 +37,12 @@ body div.modal button.btn-secondary:not(:disabled) {
 }
 main {
   height: calc(100dvh - 104.95px);
+}
+main .fa {
+  color: #d9d9d9;
+}
+main .fas {
+  color: #d9d9d9;
 }
 main button.del {
   font-weight: bold;

@@ -1,12 +1,35 @@
 @import 'utilities';
 
+div.secondary-nav-container {
+    @media only screen and (max-width: 780px) {
+        max-width: clamp(300px, 100%, 100%);
+    }
+}
+
 ul {
     &.nav {
+        @media only screen and (min-width: 780px) {
+            display: flex;
+            justify-content: space-between;
 
-        display: flex;
-        justify-content: space-between;
+            & li.nav-item {
+                margin-left: 0.75rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 780px) {
+            & li.nav-item {
+                margin-left: 1.5rem;
+            }
+
+        }
+
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
         border-bottom: calc(1px + 0.01dvw) solid var(--primary-color);
         margin-bottom: max(2dvw, 0.75rem);
+        overflow-x: auto;
 
     }
 
@@ -63,5 +86,6 @@ main.main {
 }
 
 div.datepickers-container div.datepicker {
-    font-size: calc(0.75rem + 0.45vw)
+    // 
+    font-size: clamp(1rem, 0.75rem + 0.45vw, 24px);
 }

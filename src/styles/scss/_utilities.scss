@@ -8,27 +8,34 @@
 
 
 @media only screen and (max-width: 600px) {
-    h1 {
+
+    h1,
+    .fs-1 {
         font-size: calc(1.45rem + 1.25vw);
     }
 
-    h2 {
+    h2,
+    .fs-2 {
         font-size: calc(1.18rem + 1.25vw);
     }
 
-    h3 {
+    h3,
+    .fs-3 {
         font-size: calc(1rem + 1.25vw);
     }
 
-    h4 {
+    h4,
+    .fs-4 {
         font-size: calc(1rem + 1vw);
     }
 
-    h5 {
+    h5,
+    .fs-5 {
         font-size: calc(1rem + 0.6575vw);
     }
 
-    h6 {
+    h6,
+    .fs-6 {
         font-size: calc(0.75rem + 0.6575vw);
     }
 
