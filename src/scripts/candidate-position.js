@@ -361,7 +361,7 @@ let table = new DataTable('#example', {
         topEnd: null,
         bottom: function () {
             let toolbar = document.createElement('div');
-            toolbar.innerHTML = `<button class="add-new" id="add-new">
+            toolbar.innerHTML = `<button class="add-new text-uppercase" id="add-new">
                                     Add New Position
                                 </button>`;
 

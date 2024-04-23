@@ -10,13 +10,8 @@ require_once FileUtils::normalizeFilePath('includes/classes/db-config.php');
 require_once FileUtils::normalizeFilePath('includes/classes/db-connector.php');
 require_once FileUtils::normalizeFilePath('includes/classes/session-manager.php');
 
-$org_name = $_SESSION['organization'] ?? '';
+include 'includes/session-exchange.php';
 
-include 'includes/organization-list.php';
-
-$org_full_name = $org_full_names[$org_name];
-
-// Check if voter_id and role is set in session
 // SessionManager::checkUserRoleAndRedirect();
 // if (!isset($_SESSION['voter_id'])) {
 //     http_response_code(401);
@@ -75,6 +70,7 @@ echo "
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="vendor/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -121,7 +117,8 @@ echo "
     ?>
 
 
-    <?php include_once FileUtils::normalizeFilePath(Path::COMPONENTS_PATH . '/footer.php') ?>
+    <?php include_once FileUtils::normalizeFilePath('includes/views/configuration/configuration-footer.php')
+    ?>
 
     <!-- Vendor Scripts -->
     <script src="vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

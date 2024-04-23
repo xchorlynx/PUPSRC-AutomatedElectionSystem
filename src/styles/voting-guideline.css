@@ -1,8 +1,10 @@
-main .fa-grip-lines.fas::before, main .fa-grip-lines.fa::before {
+main .fa-grip-lines.fas::before,
+main .fa-grip-lines.fa::before {
   font-size: max(1vw, 1rem);
 }
 
-.dt-rowReorder-float input[type=text].text-editable, main input[type=text].text-editable {
+.dt-rowReorder-float input[type=text].text-editable,
+main input[type=text].text-editable {
   padding-left: calc(0.25rem + 0.2dvw);
   margin-left: calc(0.5rem + 0.2dvw);
   outline: none;
@@ -11,11 +13,14 @@ main .fa-grip-lines.fas::before, main .fa-grip-lines.fa::before {
   max-width: calc(100% - 1px);
   font-size: calc(0.75rem + 0.6575vw);
 }
-.dt-rowReorder-float input[type=text].text-editable:focus-visible, main input[type=text].text-editable:focus-visible {
+
+.dt-rowReorder-float input[type=text].text-editable:focus-visible,
+main input[type=text].text-editable:focus-visible {
   outline: 0.5px solid #0075FF;
 }
 
-button.add-new, main table.table tbody tr {
+button.add-new,
+main table.table tbody tr {
   min-height: calc(1rem + 3vw);
   height: calc(1rem + 3vw);
 }
@@ -24,50 +29,83 @@ body div.modal button.btn {
   color: var(--white);
   box-shadow: var(--bs-box-shadow-sm);
 }
+
 body div.modal button.btn:active {
   box-shadow: none !important;
 }
+
 body div.modal button.btn-primary:not(:disabled) {
   background-color: var(--primary-color);
   border: calc(0.25rem + 0.2vw) solid var(--primary-color);
 }
+
 body div.modal button.btn-secondary:not(:disabled) {
   background-color: var(--secondary-color);
   border: calc(0.25rem + 0.2vw) solid var(--secondary-color);
 }
+
+body div.modal button.btn {
+  color: var(--white);
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+body div.modal button.btn:active {
+  box-shadow: none !important;
+}
+
+body div.modal button.btn-primary:not(:disabled) {
+  background-color: var(--primary-color);
+  border: calc(0.25rem + 0.2vw) solid var(--primary-color);
+}
+
+body div.modal button.btn-secondary:not(:disabled) {
+  background-color: var(--secondary-color);
+  border: calc(0.25rem + 0.2vw) solid var(--secondary-color);
+}
+
 main {
   height: calc(100dvh - 104.95px);
 }
+
 main .fa {
   color: #d9d9d9;
 }
+
 main .fas {
   color: #d9d9d9;
 }
+
 main button.del {
   font-weight: bold;
   position: relative;
 }
+
 main button.del span.icon.trash {
   padding: 1rem 0.25rem;
 }
+
 main button.del span.icon.trash svg {
   transform: translateY(-8%);
 }
+
 main table.table {
   margin-bottom: 0px;
   border: calc(0.5px + 0.06dvw) solid rgb(217, 217, 217);
 }
+
 main table.table tbody tr {
   cursor: pointer;
 }
+
 main table.table tbody tr td {
   vertical-align: middle;
 }
+
 main table.table tbody tr td.grab {
   cursor: -webkit-grab;
   cursor: grab;
 }
+
 main table.table tbody tr.selected {
   border: calc(0.5px + 0.1vw) solid #0075FF;
 }
@@ -77,6 +115,7 @@ main table.table tbody tr.selected {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
+
 .dt-rowReorder-float input[type=text].text-editable {
   font-weight: bold;
 }
@@ -84,6 +123,7 @@ main table.table tbody tr.selected {
 tr.dt-rowReorder-moving {
   outline: calc(0.5px + 0.06dvw) dotted #0075FF;
 }
+
 tr.dt-rowReorder-moving input[type=text].text-editable {
   font-weight: bold;
 }
@@ -101,18 +141,20 @@ div.dt-container div.row.mt-2.justify-content-md-center:last-child {
   margin-top: 0 !important;
 }
 
-.card-box + div.toolbar {
+.card-box+div.toolbar {
   display: flex;
   margin-top: max(1dvw, 0.75rem);
   align-items: center;
   justify-content: space-between;
 }
-.card-box + div.toolbar button {
+
+.card-box+div.toolbar button {
   font-weight: 700;
   border-radius: 15px;
   position: relative;
 }
-.card-box + div.toolbar button[data-selected]:not([data-selected=""])::before {
+
+.card-box+div.toolbar button[data-selected]:not([data-selected=""])::before {
   content: attr(data-selected);
   visibility: visible;
   position: absolute;
@@ -127,7 +169,8 @@ div.dt-container div.row.mt-2.justify-content-md-center:last-child {
   background-color: red;
   color: var(--white);
 }
-.card-box + div.toolbar button::before {
+
+.card-box+div.toolbar button::before {
   visibility: hidden;
 }
 
@@ -139,9 +182,12 @@ button.add-new {
   font-weight: bold;
   color: rgb(134, 134, 134);
 }
+
 button.add-new:hover {
   background: rgb(236, 236, 236);
   font-weight: bolder;
   color: var(--black);
   cursor: crosshair;
-}/*# sourceMappingURL=voting-guideline.css.map */
+}
+
+/*# sourceMappingURL=voting-guideline.css.map */

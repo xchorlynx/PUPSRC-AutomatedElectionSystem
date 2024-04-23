@@ -13,14 +13,14 @@ ul {
             justify-content: space-between;
 
             & li.nav-item {
-                margin-left: 0.75rem;
+                margin-right: 0.75rem;
             }
 
         }
 
         @media only screen and (max-width: 780px) {
             & li.nav-item {
-                margin-left: 1.5rem;
+                margin-right: 1.5rem;
             }
 
         }
@@ -55,6 +55,8 @@ ul {
 }
 
 main.main {
+    overflow: visible;
+
     div.container div.row div.col-md-10 {
         @media only screen and (min-width: 1400px) {
             // width: min(calc(84vw + (10 * (100vw - 1400px) / 100)), 90vw);

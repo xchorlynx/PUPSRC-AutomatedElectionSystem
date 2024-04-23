@@ -88,12 +88,12 @@ ul.nav {
     justify-content: space-between;
   }
   ul.nav li.nav-item {
-    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 }
 @media only screen and (max-width: 780px) {
   ul.nav li.nav-item {
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 ul li.nav-item a.secondary-nav {
@@ -110,6 +110,9 @@ ul li.nav-item a.secondary-nav.active {
   border-bottom: calc(1.5px + 0.25dvw) solid var(--primary-color);
 }
 
+main.main {
+  overflow: visible;
+}
 main.main .card-box .card-header {
   display: grid;
   place-items: center;
